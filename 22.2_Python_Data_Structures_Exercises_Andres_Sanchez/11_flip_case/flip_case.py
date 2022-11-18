@@ -1,13 +1,14 @@
 # def flip_case(phrase, to_swap):
-#        phrase.replace
 
 
 
 def flip_case(phrase, letter):
+
     for ltr in phrase:
-        if ltr == letter and ltr and lett
-            return phrase.replace(ltr, ltr.upper());
-            
+        if ltr == letter:
+            return phrase.replace(ltr, ltr.swapcase())
+
+
 
 
 
