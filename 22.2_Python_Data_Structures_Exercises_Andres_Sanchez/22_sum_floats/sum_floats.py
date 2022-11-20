@@ -1,4 +1,14 @@
 def sum_floats(nums):
+    total = 0
+
+    for num in nums:
+        if type(num) == float:
+            total = total + num
+    return total
+
+
+
+
     """Return sum of floating point numbers in nums.
     
         >>> sum_floats([1.5, 2.4, 'awesome', [], 1])

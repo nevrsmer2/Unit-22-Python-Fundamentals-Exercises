@@ -1,4 +1,13 @@
 def sum_pairs(nums, goal):
+
+
+
+
+
+
+
+
+
     """Return tuple of first pair of nums that sum to goal.
 
     For example:

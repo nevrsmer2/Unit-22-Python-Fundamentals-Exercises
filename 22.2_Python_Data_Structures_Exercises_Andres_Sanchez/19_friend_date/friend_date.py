@@ -1,4 +1,28 @@
 def friend_date(a, b):
+    items_a = []
+    items_b = []
+    
+    for item in a:
+        if type(item) == list:
+            for X in item:
+                items_a.append(X)
+        else:
+            items_a.append(item)
+    
+    for item in b:
+        if type(item) == list:
+             for Z in item:
+                  items_b.append(Z)
+        else:
+            items_b.append(item)
+
+    in_common = set(items_a) & set(items_b)
+    if len(in_common) != 0:
+        return True
+    else:
+        return False
+
+
     """Given two friends, do they have any hobbies in common?
 
     - a: friend #1, a tuple of (name, age, list-of-hobbies)

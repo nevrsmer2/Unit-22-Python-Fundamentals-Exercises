@@ -1,4 +1,26 @@
 def calculate(operation, a, b, make_int=False, message='The result is'):
+    if operation != 'add' and operation != 'subtract' and operation != 'multiply' and operation != 'divide':
+        return None
+
+    if operation == 'add':
+        return a + b
+
+    if operation == 'subtract':
+        if make_int == False:
+            return  a - b
+        if make_int == True:
+            return  int(a - b)
+
+    if operation == 'multiply':
+        return f'{message} {a * b}'
+        
+    if operation == 'divide':
+        return f'I got {a / b}'
+
+
+
+
+
     """Perform operation on a + b, ()possibly truncating) & returning w/msg.
 
     - operation: 'add', 'subtract', 'multiply', or 'divide'

@@ -1,4 +1,31 @@
-def partition(lst, fn):
+def partition(list, fn):
+    are_str = []
+    not_str = []
+
+    if fn == "is_string":
+        for word in list:
+             if type(word) == str:
+                 are_str.append(word)
+             else:
+                 not_str.append(word)
+        return [are_str, not_str]
+
+# partition(["hi", None, 6, "bye"], 'is_string')
+
+    evens = []
+    odds = []
+
+    if fn == "is_even":
+        for num in list:
+            if num % 2 == 0:
+                evens.append(num)
+            else:
+                odds.append(num)
+    return [evens, odds]
+
+# partition([1, 2, 3, 4], 'is_even')
+
+
     """Partition lst by predicate.
      
      - lst: list of items
