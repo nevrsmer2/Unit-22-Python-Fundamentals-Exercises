@@ -1,8 +1,14 @@
 def extract_full_names(people):
 
+    variable_name = people[dict].values()
 
 
 
+
+
+
+
+extract_full_names(names)
 
 
 
@@ -13,7 +19,7 @@ def extract_full_names(people):
 
     Returns list of space-separated first and last names.
 
-names_2 = [
+names = [
 {'first': 'Ada', 'last': 'Lovelace'},
 {'first': 'Grace', 'last': 'Hopper'},
 ]

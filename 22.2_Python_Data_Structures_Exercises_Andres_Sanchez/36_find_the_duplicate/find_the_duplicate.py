@@ -1,4 +1,15 @@
 def find_the_duplicate(nums):
+    non_duplicates = []
+    for num in nums:
+          if num not in non_duplicates:
+               non_duplicates.append(num)
+          else:
+                 print(num,end=' ')
+
+            # l=[1,2,3,4,5,2,3,4,7,9,5
+
+
+
     """Find duplicate number in nums.
 
     Given a list of nums with, at most, one duplicate, return the duplicate.

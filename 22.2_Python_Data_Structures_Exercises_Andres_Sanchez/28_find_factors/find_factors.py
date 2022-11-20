@@ -1,4 +1,14 @@
 def find_factors(num):
+    factors = [ intg for intg in range(1, num + 1)  if num % intg == 0]
+    return factors
+
+
+
+#    for i in range(1, num + 1):
+#        if num % i == 0:
+#            print(i)
+
+
     """Find factors of num, in increasing order.
 
     >>> find_factors(10)

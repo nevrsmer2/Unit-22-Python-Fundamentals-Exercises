@@ -1,4 +1,12 @@
 def sum_range(nums, start=0, end=None):
+
+
+
+
+    # total = nums[start:end +1]
+    # return sum(total)
+# Issue with the +1 when not arg is passed in for "end" parameter
+
     """Return sum of numbers from start...end.
 
     - start: where to start (if not provided, start at list start)

@@ -1,5 +1,12 @@
 def two_oldest_ages(ages):
-    """Return two distinct oldest ages as tuple (second-oldest, oldest)..
+    ages_set = set(ages)
+    ages_list = list(ages_set)
+    two_oldest = (ages_list[-1], ages_list[-2])
+    print("Ages List:", ages_list)
+    print(two_oldest)
+
+
+    """Return two distinct oldest ages in a tuple (second-oldest, oldest)..
 
         >>> two_oldest_ages([1, 2, 10, 8])
         (8, 10)
