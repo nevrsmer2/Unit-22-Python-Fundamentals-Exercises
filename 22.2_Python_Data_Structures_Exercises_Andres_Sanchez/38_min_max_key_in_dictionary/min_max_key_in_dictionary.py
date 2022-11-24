@@ -1,4 +1,11 @@
 def min_max_keys(d):
+    keys = list(d.keys())
+    keys.sort()
+    min_max = tuple([keys[0], keys[-1]])
+    return min_max
+
+
+
     """Return tuple (min-keys, max-keys) in d.
 
         >>> min_max_keys({2: 'a', 7: 'b', 1: 'c', 10: 'd', 4: 'e'})

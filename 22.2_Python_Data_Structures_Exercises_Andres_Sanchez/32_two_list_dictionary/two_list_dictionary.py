@@ -1,6 +1,13 @@
 def two_list_dictionary(keys, values):
     return {k:v for k, v in zip(keys, values)}
 
+    #  Couldn't figure out how to return None as a value when there are fewer values than keys
+
+    #  From solution (works):
+    # from itertools import zip_longest
+    # return dict(zip_longest(keys, values))
+
+
 
 # {}.fromkeys((['x', 'y', 'z']), '[9, 8, 7])
 

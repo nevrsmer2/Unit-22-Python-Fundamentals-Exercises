@@ -1,14 +1,29 @@
 def extract_full_names(people):
+    # return [f"{person['first']} {person['last']}" for person in people]
 
-    variable_name = people[dict].values()
+    full_names = []
+
+    for person in people:
+            full_names.append(f"{person['first']} {person['last']}")
+    return full_names
+
+
+#     or:
+
+# def extract_full_names(people):
+#     return [f"{person['first']} {person['last']}" for person in people]
+
+
+
+
+        # print([f"{person['first']} {person['last']}"])
 
 
 
 
 
 
-
-extract_full_names(names)
+# extract_full_names(names)
 
 
 

@@ -4,10 +4,7 @@ def find_the_duplicate(nums):
           if num not in non_duplicates:
                non_duplicates.append(num)
           else:
-                 print(num,end=' ')
-
-            # l=[1,2,3,4,5,2,3,4,7,9,5
-
+                 return num
 
 
     """Find duplicate number in nums.
