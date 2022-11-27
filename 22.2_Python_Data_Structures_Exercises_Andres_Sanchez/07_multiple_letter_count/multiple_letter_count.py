@@ -9,7 +9,6 @@ def multiple_letter_count(phrase):
             letter_count[letter] = letter_count[letter] +1
     return letter_count
 
-multiple_letter_count('kitties')
 
 
 

@@ -1,16 +1,10 @@
-# def flip_case(phrase, to_swap):
-
-
-
 def flip_case(phrase, letter):
 
     for ltr in phrase:
         if ltr == letter:
             return phrase.replace(ltr, ltr.swapcase())
 
-
-
-
+# * * Does not work.  Only flips the case of the letter passed in
 
 
 """Flip [to_swap] case each time it appears in phrase.

@@ -1,9 +1,15 @@
 def intersection(list_1, list_2):
     '''Converts list arguments into sets, intersects the sets, and then converts the intersected set to a list'''
-    set_1 = set(list_1)
-    set_2 = set(list_2)
+    # set_1 = set(list_1)
+    # set_2 = set(list_2)
     
-    inter_list = list(set_1.intersection(set_2))
+    # inter_list = list(set_1.intersection(set_2))
+    # return inter_list
+
+    #  set_1 = set(list_1)
+    # set_2 = set(list_2)
+    
+    inter_list = list(set(list_1).intersection(set(list_2)))
     return inter_list
 
 
